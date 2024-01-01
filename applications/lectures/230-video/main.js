@@ -5,11 +5,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const start = async() => {
     const mindarThree = new window.MINDAR.IMAGE.MindARThree({
       container: document.body,
-      imageTargetSrc: '../../assets/targets/wildLife.mind',
+      imageTargetSrc: 'applications/assets/targets/wildLife.mind',
     });
     const {renderer, scene, camera} = mindarThree;
 
-    const video = await loadVideo("../../assets/videos/sintel/wildlife.mp4");
+    const video = await loadVideo("applications/assets/videos/wildlife.mp4");
     const texture = new THREE.VideoTexture(video);
 
     const geometry = new THREE.PlaneGeometry(1, 204/480);
